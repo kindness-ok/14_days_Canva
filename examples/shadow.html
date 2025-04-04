@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Html Canvas Shadow</h1>
+
+  <canvas id="myCanvas" width="400" height="200" style="border:1px solid #000000;">
+    Sorry, your browser does not support canvas.
+  </canvas>
+  <script>
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+    
+    // Shadow
+    ctx.shadowColor = "lightblue";
+    ctx.shadowBlur = 8;
+    ctx.shadowOffsetX = 10;
+    ctx.shadowOffsetY = 10;
+    
+    // Filled rectangle
+    ctx.fillStyle = "blue";
+    ctx.fillRect(20, 20, 100, 100);
+    
+    // Stroked rectangle
+    ctx.lineWidth = 4;
+    ctx.strokeStyle = "blue";
+    ctx.strokeStyle = "red";
+    ctx.strokeRect(170, 20, 100, 100);
+  </script>
+</body>
+</html>

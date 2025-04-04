@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>HTML5 Canvas linearGradient()</h1>
+
+<canvas id="myCanvas" width="300" height="150" style="border:1px solid grey;">
+Sorry, your browser does not support canvas.
+</canvas>
+
+<script>
+const c = document.getElementById("myCanvas");
+const ctx = c.getContext("2d");
+
+// Create linear gradient
+const grad=ctx.createLinearGradient(0,0,200,0);
+grad.addColorStop(0, "red");
+grad.addColorStop(1, "yellow"); 
+
+// Fill rectangle with gradient
+ctx.fillStyle = grad;
+ctx.fillRect(10,10,200,100);
+</script>
+
+</body>
+</html>
