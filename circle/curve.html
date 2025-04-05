@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>HTML5 Canvas quadraticCurveTo() Method</h1>
+
+<canvas id="myCanvas" width="300" height="150" style="border:1px solid #000000;">
+Sorry, your browser does not support canvas.
+</canvas>
+
+<script>
+const canvas = document.getElementById("myCanvas");
+const ctx = canvas.getContext("2d");
+
+ctx.beginPath();
+ctx.moveTo(10, 100);
+ctx.quadraticCurveTo(100, 80, 220, 10);
+ctx.stroke();
+</script>
+
+</body>
+</html>
